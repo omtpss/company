@@ -20,7 +20,7 @@ function Breadcrumbs(props) {
             <Breadcrumb
                 items={[
                     {
-                        href: '',
+                        href: '/',
                         title: (
                             <>
                                 <HomeOutlined />
