@@ -1,6 +1,15 @@
-function About () {
+import Breadcrumbs from '../layout/Breadcrumbs';
+
+
+function About() {
+
+
     return (
-        <h1>About</h1>
+        <div className="banner innerBanner">
+            <div className="container">
+                <Breadcrumbs/>
+            </div>
+        </div>
     )
 }
 

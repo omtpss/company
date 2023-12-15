@@ -1,7 +1,7 @@
 import Breadcrumbs from '../layout/Breadcrumbs';
 
 
-function Services() {
+function Contact() {
 
 
     return (
@@ -13,4 +13,4 @@ function Services() {
     )
 }
 
-export default Services;
+export default Contact;

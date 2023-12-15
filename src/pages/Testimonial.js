@@ -1,6 +1,15 @@
+import Breadcrumbs from '../layout/Breadcrumbs';
+
+
 function Testimonial() {
+
+
     return (
-        <h1>Testimonial</h1>
+        <div className="banner innerBanner">
+            <div className="container">
+                <Breadcrumbs/>
+            </div>
+        </div>
     )
 }
 

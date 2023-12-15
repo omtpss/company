@@ -196,6 +196,7 @@ span.ant-typography {
   position: relative;
   display: flex;
   align-items: center;
+  padding-top: 90px;
 }
 
 .banner::after {
@@ -399,6 +400,25 @@ span.ant-typography {
 
 
 /* Contact Section */
+.contactUs {
+  background-image: url(http://localhost:3000/static/media/map.873e06dcad0e00ae2072.jpg);
+  background-size: 100%;
+  background-position: bottom;
+  position: relative;
+}
+
+.contactUs::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: #f2f2f4eb;
+}
+
+.contactUs .container {
+  position: relative;
+  z-index: 2;
+}
+
 .contactList .iconListIcon {
   flex-basis: 40px;
 }
@@ -485,4 +505,41 @@ span.ant-typography {
   background: #141F3D;
   text-align: center;
   padding: 20px;
+}
+
+
+/* Inner Banner */
+.innerBanner {
+  height: 420px;
+}
+
+.innerBanner h1.primaryTitle {
+  margin: 0 0 16px !important;
+  font-size: 60px;
+  text-transform: capitalize;
+}
+
+.innerBanner .ant-breadcrumb ol {
+  justify-content: center;
+}
+
+.innerBanner .ant-breadcrumb a {
+  color: #fff;
+  font-size: 18px;
+  display: flex;
+}
+
+.innerBanner .ant-breadcrumb-separator {
+  color: #fff;
+  font-size: 20px;
+}
+
+.innerBanner .ant-breadcrumb span.ant-breadcrumb-link {
+  color: #ABAFBA;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+.innerBanner .ant-breadcrumb .ant-breadcrumb-link >.anticon+span {
+  margin-inline-start: 6px;
 }

@@ -24,7 +24,7 @@ function ContactSection() {
     ]
 
     return (
-        <div className='sectionPadding greyBg'>
+        <div className='sectionPadding contactUs'>
             <div className="container">
 
                 <Row align="middle" gutter={[100]}>

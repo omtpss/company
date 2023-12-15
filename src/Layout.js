@@ -8,6 +8,7 @@ import Service from './pages/Services';
 import Project from './pages/Project';
 import Testimonial from './pages/Testimonial';
 import { ConfigProvider } from 'antd';
+import Contact from './pages/Contact';
 
 function Layout() {
   return (
@@ -20,6 +21,7 @@ function Layout() {
             <Route path='service' element={<Service />} />
             <Route path='project' element={<Project />} />
             <Route path='testimonial' element={<Testimonial />} />
+            <Route path='contact' element={<Contact />} />
           </Route>
         </Routes>
       </div>
