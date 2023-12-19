@@ -1,4 +1,5 @@
-import { Col, Row, Typography, Image, Button } from 'antd';
+import { Col, Row, Typography, Image } from 'antd';
+import { Link } from 'react-router-dom';
 
 const { Title, Text } = Typography;
 
@@ -23,7 +24,7 @@ function ChooseSection() {
 
 
     return (
-        <div className='sectionPadding'>
+        <div className='sectionPadding chooseSection'>
             <div className="container">
                 <Row align="middle" gutter={[50]}>
                     <Col span={12}>
@@ -52,7 +53,7 @@ function ChooseSection() {
                                 })}
                             </div>
                             <br /><br />
-                            <Button type="primary" danger> Contact Us </Button>
+                            <Link to="/contact" type="primary" className='ant-btn-primary' danger> Contact Us </Link>
                         </div>
                     </Col>
                 </Row>

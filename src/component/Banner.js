@@ -1,4 +1,5 @@
 import { Col, Row, Typography, Image, Button, Space } from 'antd';
+import { Link } from 'react-router-dom';
 
 const {Title, Text} = Typography;
 
@@ -15,7 +16,7 @@ function Banner() {
 
                             <Space size={[16, 16]} wrap>
                                 <Button type="primary" danger> Get a Quote </Button>
-                                <Button type="primary" className='ml-5' danger> Contact Us </Button>
+                                <Link to="/contact" type="primary" className='ml-5 ant-btn-primary' danger> Contact Us </Link>
                             </Space>
                         </div>
                     </Col>

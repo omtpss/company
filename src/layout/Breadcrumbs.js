@@ -1,7 +1,7 @@
 import { Typography, } from 'antd';
-import { Breadcrumb } from 'antd';
+//import { Breadcrumb } from 'antd';
 import { HomeOutlined } from '@ant-design/icons';
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import React, { useEffect, useState } from 'react';
 
 const { Title } = Typography;
@@ -17,7 +17,18 @@ function Breadcrumbs(props) {
     return (
         <div>
             <Title align="center" level={1} className='primaryTitle'>{title}</Title>
-            <Breadcrumb
+            <ul className='breadcrumbWrap'>
+                <li>
+                    <Link to="/"><HomeOutlined /> Home</Link>
+                </li>
+                <li>
+                    <Link to="/">/</Link>
+                </li>
+                <li>
+                    <span>{title}</span>
+                </li>
+            </ul>
+            {/* <Breadcrumb
                 items={[
                     {
                         href: '/',
@@ -36,7 +47,7 @@ function Breadcrumbs(props) {
                         ),
                     }
                 ]}
-            />
+            /> */}
         </div>
     )
 }

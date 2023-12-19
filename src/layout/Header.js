@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react"
-import { Link, Outlet } from "react-router-dom";
+import { Outlet, NavLink, Link } from "react-router-dom";
 import { PhoneOutlined } from '@ant-design/icons';
 
 function Header() {
@@ -16,26 +16,26 @@ function Header() {
                 <div className="container">
                     <div className="nav_menu">
                         <div className="site_logo">
-                            <span>OP</span>
+                            <Link to="/">OP</Link>
                         </div>
                         <ul>
                             <li>
-                                <Link to="/">Home</Link>
+                                <NavLink to="/">Home</NavLink>
                             </li>
                             <li>
-                                <Link to="/about">About</Link>
+                                <NavLink to="/about">About</NavLink>
                             </li>
                             <li>
-                                <Link to="/service">Services</Link>
+                                <NavLink to="/service">Services</NavLink>
                             </li>
                             <li>
-                                <Link to="/project">Projects</Link>
+                                <NavLink to="/project">Projects</NavLink>
                             </li>
                             <li>
-                                <Link to="/testimonial">Testimonial</Link>
+                                <NavLink to="/testimonial">Testimonial</NavLink>
                             </li>
                             <li>
-                                <Link to="/contact">Contact</Link>
+                                <NavLink to="/contact">Contact</NavLink>
                             </li>
                         </ul>
                         <div className="callLink">

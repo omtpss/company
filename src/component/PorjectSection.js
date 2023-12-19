@@ -47,7 +47,7 @@ function PorjectSection() {
 
 
     return (
-        <div className='greyBg sectionPadding'>
+        <div className='greyBg sectionPadding projectSection'>
             <div className="container">
                 <Title level={4} align="center" className='secondaryTitle blueColor'><span>Our</span> Projects</Title>
                 <Title level={1} align="center" className='primaryTitle blueColor spaceBottom'>Look at the work completed by Tekone</Title>

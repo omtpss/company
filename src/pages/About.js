@@ -1,3 +1,5 @@
+import AboutSection from '../component/AboutSection';
+import ChooseSection from '../component/ChooseSection';
 import Breadcrumbs from '../layout/Breadcrumbs';
 
 
@@ -5,10 +7,16 @@ function About() {
 
 
     return (
-        <div className="banner innerBanner">
-            <div className="container">
-                <Breadcrumbs/>
+        <div className='AboutPage'>
+            <div className="banner innerBanner">
+                <div className="container">
+                    <Breadcrumbs />
+
+                </div>
             </div>
+            <AboutSection />
+            <ChooseSection/>
+            
         </div>
     )
 }

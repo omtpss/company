@@ -41,7 +41,7 @@ function ServiceSection() {
 
 
     return (
-        <div className='greyBg sectionPadding'>
+        <div className='greyBg sectionPadding serviceSection'>
             <div className="container">
                 <Title level={4} align="center" className='secondaryTitle blueColor'><span>Our</span> Services</Title>
                 <Title level={1} align="center" className='primaryTitle blueColor spaceBottom'>We care about your business</Title>

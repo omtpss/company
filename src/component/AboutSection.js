@@ -4,7 +4,7 @@ const { Title, Text } = Typography;
 
 function AboutSection() {
     return (
-        <div className='sectionPadding'>
+        <div className='sectionPadding aboutSection'>
             <div className="container">
                 <Row align="middle" gutter={[50]}>
                     <Col span={12}>

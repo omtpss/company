@@ -65,6 +65,19 @@ a:hover {
   font-size: 18px;
   line-height: normal;
   font-weight: 500;
+  background: #ff4d4f;
+  border-radius: 6px;
+  color: #fff;
+  display: inline-block;
+  transition: var(--transition01);
+  box-shadow: 0 2px 0 rgba(255, 38, 5, 0.06);
+  border: 1px solid #ff4d4f;
+}
+
+.ant-btn-primary:hover {
+  background-color: #ff7875;
+  color: #fff;
+  border: 1px solid #ff7875;
 }
 
 h4.secondaryTitle {
@@ -105,8 +118,6 @@ span.ant-typography {
 }
 
 
-
-
 /* Header */
 .site_header {
   padding-block: 32px;
@@ -137,11 +148,11 @@ span.ant-typography {
   border-radius: var(--borderRadiusBtn);
 }
 
-.site_header ul a:hover {
+.site_header ul a:hover, .site_header ul a.active {
   color: var(--primaryColor);
 }
 
-.site_logo span {
+.site_logo a {
   background-color: var(--primaryColor);
   color: var(--whiteColor);
   width: 40px;
@@ -152,6 +163,7 @@ span.ant-typography {
   border-radius: 50%;
   font-size: 15px;
   font-weight: bold;
+  padding-top: 4px;
 }
 
 .nav_menu>div {
@@ -258,6 +270,7 @@ span.ant-typography {
   display: flex;
   align-items: center;
   font-size: 16px;
+  border: none;
 }
 
 .serviceCard .ant-btn-primary:hover {
@@ -519,7 +532,7 @@ span.ant-typography {
   text-transform: capitalize;
 }
 
-.innerBanner .ant-breadcrumb ol {
+/* .innerBanner .ant-breadcrumb ol {
   justify-content: center;
 }
 
@@ -542,4 +555,43 @@ span.ant-typography {
 
 .innerBanner .ant-breadcrumb .ant-breadcrumb-link >.anticon+span {
   margin-inline-start: 6px;
+} */
+
+.breadcrumbWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
+
+.breadcrumbWrap a, .breadcrumbWrap span:not(.anticon) {
+  display: flex;
+  color: #fff;
+  font-size: 18px;
+  gap: 7px;
+  text-transform: capitalize;
+}
+
+.breadcrumbWrap span:not(.anticon) {
+  color: #ABAFBA;
+}
+
+.breadcrumbWrap a .anticon {
+  font-size: 14px;
+  margin-top: -5px;
+}
+
+
+/* Inner Pages */
+.projectPage .projectSection  {
+  background-color: var(--whiteColor);
+}
+
+.AboutPage .aboutSection  {
+  background-color: #F2F2F4;
+}
+
+.AboutPage .chooseSection .ant-row {
+  flex-direction: row-reverse;
+}
+

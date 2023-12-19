@@ -9,6 +9,9 @@ import Project from './pages/Project';
 import Testimonial from './pages/Testimonial';
 import { ConfigProvider } from 'antd';
 import Contact from './pages/Contact';
+import FooterSection from './layout/FooterSection';
+import ContactSection from './component/ContactSection';
+
 
 function Layout() {
   return (
@@ -24,7 +27,10 @@ function Layout() {
             <Route path='contact' element={<Contact />} />
           </Route>
         </Routes>
+        <ContactSection />
+        <FooterSection />
       </div>
+
     </ConfigProvider>
   );
 }
