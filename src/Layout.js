@@ -30,7 +30,6 @@ function Layout() {
         <ContactSection />
         <FooterSection />
       </div>
-
     </ConfigProvider>
   );
 }

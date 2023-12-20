@@ -37,8 +37,7 @@ function ServiceSection() {
             serviceTitle: 'Web Development',
             serviceDes: 'Strategies to ensure proactive domination. At the end of the day going forward.',
         },
-    ]
-
+    ];
 
     return (
         <div className='greyBg sectionPadding serviceSection'>
@@ -60,6 +59,8 @@ function ServiceSection() {
                         )
                     })}
                 </Row>
+
+                
             </div>
         </div>
     )

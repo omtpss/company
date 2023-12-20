@@ -3,6 +3,24 @@ import { Col, Row, Typography, Image, Button } from 'antd';
 const { Title, Text } = Typography;
 
 function AboutSection() {
+    const featureData = [
+        {
+            featureIcon: <Image preview={false} src="https://demo.rstheme.com/wordpress/tekone/wp-content/uploads/2023/06/repair-expesrt.png"></Image>,
+            featureTitle: 'Expert Peoples',
+            featureDes: 'At vero eos et accusamus etiusto odio praesentium.',
+        },
+        {
+            featureIcon: <Image preview={false} src="https://demo.rstheme.com/wordpress/tekone/wp-content/uploads/2023/06/bar-charat.png"></Image>,
+            featureTitle: 'First Growing Process',
+            featureDes: 'At vero eos et accusamus etiusto odio praesentium.',
+        },
+        {
+            featureIcon: <Image preview={false} src="https://demo.rstheme.com/wordpress/tekone/wp-content/uploads/2023/06/ideaa.png"></Image>,
+            featureTitle: 'Creative Ideas',
+            featureDes: 'At vero eos et accusamus etiusto odio praesentium.',
+        },
+    ]
+
     return (
         <div className='sectionPadding aboutSection'>
             <div className="container">
@@ -21,6 +39,24 @@ function AboutSection() {
                             <Button type="primary" danger> Get a Quote </Button>
                         </div>
                     </Col>
+                </Row>
+
+                <Row gutter={[24]}>
+                    {featureData.map((items, index) => {
+                        return (
+                            <Col span={8}>
+                                <div className='featuredCard'>
+                                    <div className='featuredIcon'>
+                                        {items.featureIcon}
+                                    </div>
+                                    <div className='featuredContent'>
+                                        <Title level={4} className='secondaryTitle blueColor'>{items.featureTitle}</Title>
+                                        <Text className='blueColor'>{items.featureDes}</Text>
+                                    </div>
+                                </div>
+                            </Col>
+                        )
+                    })}
                 </Row>
             </div>
         </div>
