@@ -25,12 +25,12 @@ function AboutSection() {
         <div className='sectionPadding aboutSection'>
             <div className="container">
                 <Row align="middle" gutter={[50]}>
-                    <Col span={12}>
+                    <Col md={12}>
                         <div className='aboutImg'>
                             <Image preview={false} src="https://demo.rstheme.com/wordpress/tekone/wp-content/uploads/2023/03/feature_about_3.png"></Image>
                         </div>
                     </Col>
-                    <Col span={12}>
+                    <Col md={12}>
                         <div className='aboutContent'>
                             <Title level={4} className='secondaryTitle blueColor'><span>About</span> Us</Title>
                             <Title level={1} className='primaryTitle blueColor'>Make it easy to do your business with us and we are best</Title>
@@ -44,7 +44,7 @@ function AboutSection() {
                 <Row gutter={[24]}>
                     {featureData.map((items, index) => {
                         return (
-                            <Col span={8}>
+                            <Col sm={12} lg={8}>
                                 <div className='featuredCard'>
                                     <div className='featuredIcon'>
                                         {items.featureIcon}

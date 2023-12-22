@@ -10,6 +10,12 @@ function Header() {
         });
     }, []);
 
+    const [addClass, setAddClass] = useState(false);
+
+    const toggleClass = () => {
+        setAddClass(!addClass);
+    };
+
     return (
         <>
             <div className={scroll ? "site_header sticky_header" : "site_header"} >
@@ -18,7 +24,12 @@ function Header() {
                         <div className="site_logo">
                             <Link to="/">OP</Link>
                         </div>
-                        <ul>
+                        <ul className={addClass ? 'show' : ''} onClick={toggleClass}>
+                            <div className="mobileToggle">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
                             <li>
                                 <NavLink to="/">Home</NavLink>
                             </li>
@@ -39,7 +50,12 @@ function Header() {
                             </li>
                         </ul>
                         <div className="callLink">
-                            <PhoneOutlined style={{ fontSize: '30px'}}/> <span className="callNb"><span>Call any time</span> 123 456 7890 </span>
+                            <PhoneOutlined style={{ fontSize: '30px' }} /> <span className="callNb"><span>Call any time</span> 123 456 7890 </span>
+                        </div>
+                        <div className="mobileToggle" onClick={toggleClass}>
+                            <span></span>
+                            <span></span>
+                            <span></span>
                         </div>
                     </div>
                 </div>

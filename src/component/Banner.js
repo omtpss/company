@@ -8,7 +8,7 @@ function Banner() {
         <div className="banner">
             <div className="container">
                 <Row align="middle" gutter={[50]}>
-                    <Col span={12}>
+                    <Col md={13} sm={24}>
                         <div className='bannerContent'>
                             <Title level={4} className='secondaryTitle'>Award Winning Company</Title>
                             <Title level={1} className='primaryTitle'>Website & <span>Application</span> development agency</Title>
@@ -20,7 +20,7 @@ function Banner() {
                             </Space>
                         </div>
                     </Col>
-                    <Col span={12}>
+                    <Col md={11} sm={24}>
                         <Image preview={false} src="https://demo.rstheme.com/wordpress/tekone/wp-content/uploads/2023/03/banner_h_4_img.png"></Image>
                     </Col>
                 </Row>

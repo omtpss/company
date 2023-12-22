@@ -47,7 +47,7 @@ function ServiceSection() {
                 <Row align="middle" gutter={[24, 24]}>
                     {serviceData.map((items, index) => {
                         return (
-                            <Col key={index} span={8}>
+                            <Col key={index} lg={8} sm={12} xs={24}>
                                 <div className='serviceCard'>
                                     {items.serviceIcon}
                                     <Title level={4} className='secondaryTitle'>{items.serviceTitle}</Title>

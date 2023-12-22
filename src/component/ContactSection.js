@@ -27,29 +27,28 @@ function ContactSection() {
         <div className='sectionPadding contactUs'>
             <div className="container">
 
-                <Row align="middle" gutter={[100]}>
-                    <Col span={14}>
+                <Row align="middle" gutter={{md: 24,xl: 100}}>
+                    <Col md={14}>
                         <Title level={4} className='secondaryTitle blueColor'><span>Get</span> in Touch</Title>
                         <Title level={1} className='primaryTitle blueColor spaceBottom02'>Don't be say, Say hello!</Title>
                         <div className='formStyle'>
                             <Row gutter={[20, 20]}>
-                                <Col span={12}>
+                                <Col sm={12} xs={24}>
                                     <Input placeholder="Your Name" />
                                 </Col>
-                                <Col span={12}>
+                                <Col sm={12} xs={24}>
                                     <Input placeholder="Your Email" />
                                 </Col>
-                                <Col span={24}>
+                                <Col md={24} xs={24}>
                                     <TextArea rows={4} placeholder="Message..." maxLength={6} />
                                 </Col>
-                                <Col span={24}>
+                                <Col md={24} xs={24}>
                                     <Button type="primary" danger> Send Message </Button>
                                 </Col>
                             </Row>
-
                         </div>
                     </Col>
-                    <Col span={10}>
+                    <Col md={10}>
                         <div className='iconListWrap contactList'>
                             {contactList.map((items, index) => {
                                 return (
@@ -66,7 +65,6 @@ function ContactSection() {
                             })}
                         </div>
                     </Col>
-
                 </Row>
             </div>
         </div>

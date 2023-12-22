@@ -27,12 +27,12 @@ function ChooseSection() {
         <div className='sectionPadding chooseSection'>
             <div className="container">
                 <Row align="middle" gutter={[50]}>
-                    <Col span={12}>
+                    <Col md={12}>
                         <div className='chooseImg'>
                             <Image preview={false} src="https://demo.rstheme.com/wordpress/tekone/wp-content/uploads/2023/04/feature_img.jpg"></Image>
                         </div>
                     </Col>
-                    <Col span={12}>
+                    <Col md={12}>
                         <div className='chooseContent'>
                             <Title level={4} className='secondaryTitle blueColor'><span>Why Choose</span> Our Services!</Title>
                             <Title level={1} className='primaryTitle blueColor'>Leading the best digital agency</Title>

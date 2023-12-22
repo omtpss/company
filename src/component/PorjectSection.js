@@ -54,7 +54,7 @@ function PorjectSection() {
                 <Row align="middle" gutter={[24, 24]}>
                     {serviceData.map((items, index) => {
                         return (
-                            <Col key={index} span={8}>
+                            <Col key={index} lg={8} sm={12} xs={24}>
                                 <div className='projectCard'>
                                     <div className='porjectCardOverlay'></div>
                                     {items.projectImg}
