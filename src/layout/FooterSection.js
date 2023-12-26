@@ -9,46 +9,46 @@ function FooterSection() {
     const serviceLinks = [
         {
             linkTxt: 'IT Management',
-            linkUrl: 'https://www.google.com/',
+            linkUrl: './Contact',
         },
         {
             linkTxt: 'IT Solutions',
-            linkUrl: 'https://www.google.com/',
+            linkUrl: './Contact',
         },
         {
             linkTxt: 'Machine Learning',
-            linkUrl: 'https://www.google.com/',
+            linkUrl: './Contact',
         },
         {
-            linkTxt: 'Product Design',
-            linkUrl: 'https://www.google.com/',
+            linkTxt: 'UI/UX Design',
+            linkUrl: './Contact',
         },
         {
             linkTxt: 'SEO Optimization',
-            linkUrl: 'https://www.google.com/',
+            linkUrl: './Contact',
         },
     ]
 
     const informationLinks = [
         {
             linkTxt: 'About Company',
-            linkUrl: 'https://www.google.com/',
+            linkUrl: './About',
         },
         {
             linkTxt: 'Out Team',
-            linkUrl: 'https://www.google.com/',
+            linkUrl: './Team',
         },
         {
             linkTxt: 'Pricing Plan',
-            linkUrl: 'https://www.google.com/',
+            linkUrl: './Contact',
         },
         {
             linkTxt: 'Our Project',
-            linkUrl: 'https://www.google.com/',
+            linkUrl: './Project',
         },
         {
-            linkTxt: 'UI/UX Design',
-            linkUrl: 'https://www.google.com/',
+            linkTxt: 'Contact Us',
+            linkUrl: './Contact',
         },
     ]
 
@@ -61,7 +61,7 @@ function FooterSection() {
                         <Col lg={7} md={12} >
                             <Title className='secondaryTitle' level={4}><span>Lo</span>go</Title>
                             <Text>Proactively envisioned multimedia based expertise and cross-media growth strategies seamlessly.</Text>
-                            <div className='footerSocial'>
+                            <div className='socialIcon'>
                                 <Link>
                                     <svg enable-background="new 0 0 56.693 56.693" height="20px" id="Layer_1" version="1.1" viewBox="0 0 56.693 56.693" width="20px" ><path d="M40.43,21.739h-7.645v-5.014c0-1.883,1.248-2.322,2.127-2.322c0.877,0,5.395,0,5.395,0V6.125l-7.43-0.029  c-8.248,0-10.125,6.174-10.125,10.125v5.518h-4.77v8.53h4.77c0,10.947,0,24.137,0,24.137h10.033c0,0,0-13.32,0-24.137h6.77  L40.43,21.739z" fill='#fff' /></svg>
                                 </Link>
@@ -80,7 +80,7 @@ function FooterSection() {
                             <ul className='footerLinks'>
                                 {serviceLinks.map((links, index) => {
                                     return (
-                                        <Link target='_blank' to={links.linkUrl}><ArrowRightOutlined /> {links.linkTxt}</Link>
+                                        <Link to={links.linkUrl}><ArrowRightOutlined /> {links.linkTxt}</Link>
                                     )
                                 })}
                             </ul>
@@ -90,7 +90,7 @@ function FooterSection() {
                             <ul className='footerLinks'>
                                 {informationLinks.map((links, index) => {
                                     return (
-                                        <Link target='_blank' to={links.linkUrl}><ArrowRightOutlined /> {links.linkTxt}</Link>
+                                        <Link to={links.linkUrl}><ArrowRightOutlined /> {links.linkTxt}</Link>
                                     )
                                 })}
                             </ul>

@@ -11,11 +11,14 @@ import { ConfigProvider } from 'antd';
 import Contact from './pages/Contact';
 import FooterSection from './layout/FooterSection';
 import ContactSection from './component/ContactSection';
+import ScrollToTop from './scroll/ScrolTolTop';
+import Team from './pages/Team';
 
 
 function Layout() {
   return (
     <ConfigProvider>
+      <ScrollToTop />
       <div className="App">
         <Routes>
           <Route path="/" element={<Header />}>
@@ -25,6 +28,7 @@ function Layout() {
             <Route path='project' element={<Project />} />
             <Route path='testimonial' element={<Testimonial />} />
             <Route path='contact' element={<Contact />} />
+            <Route path='team' element={<Team />} />
           </Route>
         </Routes>
         <ContactSection />

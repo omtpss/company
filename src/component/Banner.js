@@ -1,4 +1,4 @@
-import { Col, Row, Typography, Image, Button, Space } from 'antd';
+import { Col, Row, Typography, Image, Space } from 'antd';
 import { Link } from 'react-router-dom';
 
 const {Title, Text} = Typography;
@@ -15,7 +15,7 @@ function Banner() {
                             <Text>Leverage agile frameworks to provide a robust synopsis for high level overviews iterative approaches data commnunication.</Text> <br /> <br />
 
                             <Space size={[16, 16]} wrap>
-                                <Button type="primary" danger> Get a Quote </Button>
+                                <Link to="./Contact" type="primary" className='ant-btn-primary'> Get a Quote </Link>
                                 <Link to="/contact" type="primary" className='ml-5 ant-btn-primary' danger> Contact Us </Link>
                             </Space>
                         </div>

@@ -1,4 +1,5 @@
-import { Col, Row, Typography, Image, Button } from 'antd';
+import { Col, Row, Typography, Image } from 'antd';
+import { Link } from 'react-router-dom';
 
 const { Title, Text } = Typography;
 
@@ -36,7 +37,7 @@ function AboutSection() {
                             <Title level={1} className='primaryTitle blueColor'>Make it easy to do your business with us and we are best</Title>
                             <Text>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day going forward, a new normal that has evolved operational X is on the runway.</Text> 
                             <br/><br/>
-                            <Button type="primary" danger> Get a Quote </Button>
+                            <Link to="/Contact" type="primary" className='ant-btn-primary'> Get a Quote </Link>
                         </div>
                     </Col>
                 </Row>

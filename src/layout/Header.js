@@ -50,7 +50,7 @@ function Header() {
                             </li>
                         </ul>
                         <div className="callLink">
-                            <PhoneOutlined style={{ fontSize: '30px' }} /> <span className="callNb"><span>Call any time</span> 123 456 7890 </span>
+                            <PhoneOutlined /> <span className="callNb"><span>Call any time</span> 123 456 7890 </span>
                         </div>
                         <div className="mobileToggle" onClick={toggleClass}>
                             <span></span>

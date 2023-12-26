@@ -1,21 +1,20 @@
-import AboutSection from '../component/AboutSection';
-import ChooseSection from '../component/ChooseSection';
+import TeamSection from '../component/TeamSection';
 import Breadcrumbs from '../layout/Breadcrumbs';
 
-function About() {
+
+function Team() {
+
 
     return (
-        <div className='aboutPage'>
+        <div className='servicePage'>
             <div className="banner innerBanner">
                 <div className="container">
                     <Breadcrumbs />
                 </div>
             </div>
-            <AboutSection />
-            <ChooseSection/>
-            
+            <TeamSection />
         </div>
     )
 }
 
-export default About;
+export default Team;
