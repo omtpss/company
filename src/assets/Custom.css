@@ -44,7 +44,7 @@ a:hover {
 }
 
 .container {
-  max-width: 1400px;
+  max-width: 1460px;
   padding: 0 50px;
   margin: 0 auto;
   width: 100%;
@@ -153,17 +153,17 @@ span.ant-typography.textColor {
 }
 
 .site_logo a {
-  background-color: var(--primaryColor);
   color: var(--whiteColor);
   width: 40px;
   height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   border-radius: 50%;
-  font-size: 15px;
+  font-size: 28px;
   font-weight: bold;
   padding-top: 4px;
+}
+
+.site_logo a span {
+  color: var(--primaryColor);
 }
 
 .nav_menu>div {
@@ -243,6 +243,86 @@ span.ant-typography.textColor {
 .bannerContent span.ant-typography {
   color: #FFFFFFB8;
   font-size: 18px;
+}
+
+.bannerContent h4.secondaryTitle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.bannerContent h4.secondaryTitle svg {
+  width: 30px;
+  height: 30px;
+  animation: wave-animation 2.5s infinite;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0.0deg);
+  }
+
+  10% {
+    transform: rotate(18.0deg);
+  }
+
+  20% {
+    transform: rotate(-10.0deg);
+  }
+
+  30% {
+    transform: rotate(18.0deg);
+  }
+
+  40% {
+    transform: rotate(-6.0deg);
+  }
+
+  50% {
+    transform: rotate(12.0deg);
+  }
+
+  60% {
+    transform: rotate(0.0deg);
+  }
+
+  100% {
+    transform: rotate(0.0deg);
+  }
+}
+
+.bannerImg {
+  position: relative;
+}
+
+.bannerImg .hiIcon {
+  top: 5%;
+  left: 0;
+  display: flex;
+  background: #fff;
+  padding: 15px;
+  border-radius: 6px;
+  position: absolute;
+  align-items: center;
+  animation: moveLeftRight 3s linear infinite;
+}
+
+@keyframes moveLeftRight {
+  10% {
+    transform: translateX(-6px);
+  }
+
+  33% {
+    transform: translateX(0px);
+  }
+
+  67% {
+    transform: translateX(6px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
 }
 
 
@@ -446,7 +526,7 @@ span.ant-typography.textColor {
 
 /* Contact Section */
 .contactUs {
-  background-image: url(http://localhost:3000/static/media/map.873e06dcad0e00ae2072.jpg);
+  background-image: url(/public/images/map.jpg);
   background-size: 100%;
   background-position: bottom;
   position: relative;
@@ -788,7 +868,7 @@ span.ant-typography.textColor {
     margin-right: 30px;
     position: absolute;
     right: 0;
-    top: 40px;
+    top: 34px;
   }
 
   .site_header ul a {

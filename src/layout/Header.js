@@ -22,7 +22,7 @@ function Header() {
                 <div className="container">
                     <div className="nav_menu">
                         <div className="site_logo">
-                            <Link to="/">OP</Link>
+                            <Link to="/"><span>Lo</span>go</Link>
                         </div>
                         <ul className={addClass ? 'show' : ''} onClick={toggleClass}>
                             <div className="mobileToggle">
