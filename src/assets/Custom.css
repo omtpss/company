@@ -331,6 +331,10 @@ span.ant-typography.textColor {
   color: var(--textColor);
 }
 
+.aboutImg img {
+  border-radius: var(--borderRadiusCard);
+}
+
 
 /* Featured Section */
 .featuredCard {
@@ -375,6 +379,10 @@ span.ant-typography.textColor {
 .serviceCard img {
   width: 60px !important;
   margin-bottom: 32px;
+}
+
+.serviceCard svg {
+  margin-bottom: 29px;
 }
 
 .serviceCard .ant-btn-primary {
@@ -439,6 +447,23 @@ span.ant-typography.textColor {
 .projectCard {
   position: relative;
   overflow: hidden;
+  height: 550px;
+}
+
+.projectCard .ant-image {
+  height: 100%;
+  width: 100%;
+}
+
+.projectCard .ant-image img {
+  object-fit: cover;
+  object-position: top;
+  height: 500px;
+  transition: 8s all ease;
+}
+
+.projectCard:hover .ant-image img {
+  object-position: bottom;
 }
 
 .projectCard h5.ant-typography {

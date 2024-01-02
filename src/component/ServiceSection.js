@@ -13,12 +13,12 @@ function ServiceSection() {
             serviceDes: 'Strategies to ensure proactive domination. At the end of the day going forward.',
         },
         {
-            serviceIcon: <Image preview={false} src="https://demo.rstheme.com/wordpress/tekone/wp-content/uploads/2023/03/service_h_4_icon_2.png"></Image>,
+            serviceIcon: <Image preview={false} src="https://demo.rstheme.com/wordpress/tekone/wp-content/uploads/2023/03/service_h_4_icon_6.png"></Image>,
             serviceTitle: 'Web Development',
             serviceDes: 'Strategies to ensure proactive domination. At the end of the day going forward.',
         },
         {
-            serviceIcon: <Image preview={false} src="https://demo.rstheme.com/wordpress/tekone/wp-content/uploads/2023/03/service_h_4_icon_1.png"></Image>,
+            serviceIcon: <Image preview={false} src="https://demo.rstheme.com/wordpress/tekone/wp-content/uploads/2023/03/service_h_4_icon_4.png"></Image>,
             serviceTitle: 'Frontend Development',
             serviceDes: 'Strategies to ensure proactive domination. At the end of the day going forward.',
         },
@@ -28,12 +28,12 @@ function ServiceSection() {
             serviceDes: 'Strategies to ensure proactive domination. At the end of the day going forward.',
         },
         {
-            serviceIcon: <Image preview={false} src="https://demo.rstheme.com/wordpress/tekone/wp-content/uploads/2023/03/service_h_4_icon_1.png"></Image>,
+            serviceIcon: <Image preview={false} src="https://demo.rstheme.com/wordpress/tekone/wp-content/uploads/2023/03/service_h_4_icon_5.png"></Image>,
             serviceTitle: 'Design & Concept',
             serviceDes: 'Strategies to ensure proactive domination. At the end of the day going forward.',
         },
         {
-            serviceIcon: <Image preview={false} src="https://demo.rstheme.com/wordpress/tekone/wp-content/uploads/2023/03/service_h_4_icon_2.png"></Image>,
+            serviceIcon: <Image preview={false} src="https://demo.rstheme.com/wordpress/tekone/wp-content/uploads/2023/03/service_h_4_img_3.png"></Image>,
             serviceTitle: 'Digital Strategy',
             serviceDes: 'Strategies to ensure proactive domination. At the end of the day going forward.',
         },

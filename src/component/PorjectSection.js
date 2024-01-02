@@ -8,7 +8,7 @@ function PorjectSection() {
 
     const serviceData = [
         {
-            projectImg: <Image preview={false} src="https://demo.rstheme.com/wordpress/tekone/wp-content/uploads/2023/03/portfolio-11-520x640.jpg"></Image>,
+            projectImg: <Image preview={false} src="./images/website01.png"></Image>,
             projectTitle: 'Creative Agency',
             projectTag: 'Branding',
             projectDes: 'Completely synergize resource taxing relation ships via premier niche markets.',

@@ -6,17 +6,17 @@ const { Title, Text } = Typography;
 function AboutSection() {
     const featureData = [
         {
-            featureIcon: <Image preview={false} src="https://demo.rstheme.com/wordpress/tekone/wp-content/uploads/2023/06/repair-expesrt.png"></Image>,
+            featureIcon: <Image preview={false} src="/images/expert-team.svg"></Image>,
             featureTitle: 'Expert Peoples',
             featureDes: 'At vero eos et accusamus etiusto odio praesentium.',
         },
         {
-            featureIcon: <Image preview={false} src="https://demo.rstheme.com/wordpress/tekone/wp-content/uploads/2023/06/bar-charat.png"></Image>,
+            featureIcon: <Image preview={false} src="/images/growth.svg"></Image>,
             featureTitle: 'First Growing Process',
             featureDes: 'At vero eos et accusamus etiusto odio praesentium.',
         },
         {
-            featureIcon: <Image preview={false} src="https://demo.rstheme.com/wordpress/tekone/wp-content/uploads/2023/06/ideaa.png"></Image>,
+            featureIcon: <Image preview={false} src="/images/idea.svg"></Image>,
             featureTitle: 'Creative Ideas',
             featureDes: 'At vero eos et accusamus etiusto odio praesentium.',
         },
@@ -25,16 +25,17 @@ function AboutSection() {
     return (
         <div className='sectionPadding aboutSection'>
             <div className="container">
-                <Row align="middle" gutter={[50]}>
+                <Row align="middle" gutter={{md: 24,xl: 100}}>
                     <Col md={12}>
                         <div className='aboutImg'>
-                            <Image preview={false} src="https://demo.rstheme.com/wordpress/tekone/wp-content/uploads/2023/03/feature_about_3.png"></Image>
+                            <Image preview={false} src="/images/about.jpg"></Image>
                         </div>
                     </Col>
                     <Col md={12}>
                         <div className='aboutContent'>
                             <Title level={4} className='secondaryTitle blueColor'><span>About</span> Us</Title>
                             <Title level={1} className='primaryTitle blueColor'>Make it easy to do your business with us and we are best</Title>
+                            <Text>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day going forward, a new normal that has evolved operational X is on the runway.</Text> <br/><br/>
                             <Text>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day going forward, a new normal that has evolved operational X is on the runway.</Text> 
                             <br/><br/>
                             <Link to="/Contact" type="primary" className='ant-btn-primary'> Get a Quote </Link>
