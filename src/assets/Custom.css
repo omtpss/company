@@ -123,7 +123,7 @@ span.ant-typography.textColor {
   position: fixed;
   width: 100%;
   top: 0;
-  z-index: 99;
+  z-index: 999;
   transition: var(--transition01);
 }
 
@@ -378,11 +378,10 @@ span.ant-typography.textColor {
 
 .serviceCard img {
   width: 60px !important;
-  margin-bottom: 32px;
 }
 
-.serviceCard svg {
-  margin-bottom: 29px;
+.serviceCard .serviceIcon {
+  margin-bottom: 32px;
 }
 
 .serviceCard .ant-btn-primary {
@@ -511,6 +510,19 @@ span.ant-typography.textColor {
 
 .projectCard:hover .porjectContent {
   bottom: 0;
+}
+
+.projectCard .ant-btn-primary {
+  position: absolute;
+  top: 50%;
+  z-index: 99;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+.projectCard:hover .ant-btn-primary {
+  opacity: 1;
 }
 
 
@@ -839,6 +851,10 @@ span.ant-typography.textColor {
     bottom: 0;
   }
 
+  .projectCard .ant-btn-primary {
+    opacity: 1;
+  }
+
   .sectionPadding {
     padding-block: 70px;
   }
@@ -853,6 +869,11 @@ span.ant-typography.textColor {
 
   .banner {
     height: 65vh;
+  }
+
+  .bannerImg .hiIcon {
+    padding: 12px;
+    width: 65px;
   }
 }
 
@@ -923,11 +944,11 @@ span.ant-typography.textColor {
     position: fixed;
     background: var(--secondaryColor);
     left: 0;
-    top: -105%;
+    top: -110%;
     height: 100%;
     max-width: 100%;
     width: 100%;
-    padding-top: 65px;
+    padding-top: 50px;
     z-index: 99;
     display: block;
     transition: var(--transition01);
@@ -1030,5 +1051,10 @@ span.ant-typography.textColor {
   .footerLinks a {
     font-size: 15px;
     padding-block: 2px;
+  }
+
+  .bannerImg .hiIcon {
+    padding: 8px;
+    width: 55px;
   }
 }

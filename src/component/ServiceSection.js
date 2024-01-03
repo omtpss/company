@@ -49,7 +49,7 @@ function ServiceSection() {
                         return (
                             <Col key={index} lg={8} sm={12} xs={24}>
                                 <div className='serviceCard'>
-                                    {items.serviceIcon}
+                                    <div className='serviceIcon'>{items.serviceIcon}</div>
                                     <Title level={4} className='secondaryTitle'>{items.serviceTitle}</Title>
                                     <Text >{items.serviceDes}</Text>
                                     <br /><br />
